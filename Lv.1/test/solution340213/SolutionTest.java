@@ -35,7 +35,7 @@ public class SolutionTest {
     @DisplayName("현재 재생구간을 영상 안으로 이동")
     void moveVideoLengthMax() {
         int videoLength = 453;
-        int currentPosition = 448;
+        int currentPosition = 458;
         int result = 453;
 
         assertThat(solution.moveVideoLength(videoLength, currentPosition)).isEqualTo(result);
@@ -45,7 +45,7 @@ public class SolutionTest {
     @DisplayName("현재 재생구간을 영상 안으로 이동")
     void moveVideoLengthMin() {
         int videoLength = 453;
-        int currentPosition = 5;
+        int currentPosition = -5;
         int result = 0;
 
         assertThat(solution.moveVideoLength(videoLength, currentPosition)).isEqualTo(result);
