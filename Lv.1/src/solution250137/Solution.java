@@ -10,11 +10,11 @@ public class Solution {
     }
 
     public int attack(int health, int damage) {
-        return 0;
+        return health - damage;
     }
 
     public int bandage(int health, int bandage) {
-        return 0;
+        return health + bandage;
     }
 
     public boolean isDie(int health) {
