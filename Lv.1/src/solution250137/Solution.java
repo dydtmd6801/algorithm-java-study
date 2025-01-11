@@ -18,6 +18,9 @@ public class Solution {
     }
 
     public boolean isDie(int health) {
+        if (health < 0) {
+            return true;
+        }
         return false;
     }
 }
